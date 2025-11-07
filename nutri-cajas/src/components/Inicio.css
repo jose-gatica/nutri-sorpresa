@@ -1,0 +1,36 @@
+.inicio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+
+.inicio-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.inicio-image {
+  flex: 1;
+}
+
+.inicio-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  background-color: #ff9900;
+  color: #ffffff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e68a00;
+}
