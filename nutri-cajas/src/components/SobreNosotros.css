@@ -1,0 +1,22 @@
+.sobre-nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 40px;
+  background-color: #ffffff;
+}
+
+.sobre-nosotros-content {
+  flex: 1;
+  padding-left: 40px;
+}
+
+.sobre-nosotros-image {
+  flex: 1;
+}
+
+.sobre-nosotros-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
