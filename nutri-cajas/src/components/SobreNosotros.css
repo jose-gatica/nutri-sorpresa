@@ -15,8 +15,21 @@
   flex: 1;
 }
 
-.sobre-nosotros-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
+.team-photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.team-photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#sara-photo {
+  object-position: 50% 5%; /* Adjusts the image to be more top-aligned */
 }
