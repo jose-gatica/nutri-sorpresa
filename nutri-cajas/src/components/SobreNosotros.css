@@ -20,6 +20,40 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  position: relative; /* Positioning context for blobs */
+}
+
+.team-photo-wrapper {
+  position: relative;
+  width: 180px; /* Match image size */
+  height: 180px; /* Match image size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-photo-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 220px; /* Blob size, larger than image */
+  height: 220px; /* Blob size, larger than image */
+  border-radius: 50% 60% 40% 70% / 70% 50% 60% 40%; /* Blob shape */
+  opacity: 0.6;
+  z-index: -1; /* Place behind image */
+  filter: blur(15px); /* Soften the blob */
+}
+
+/* Specific blob colors */
+.team-photo-wrapper.sara::before {
+  background-color: #FFECB3; /* Amarillo Sol Radiante */
+}
+
+.team-photo-wrapper.fran::before {
+  background-color: #FFCDD2; /* Rosa Coral Dulce */
+}
+
+.team-photo-wrapper.vanessa::before {
+  background-color: #BBDEFB; /* Azul Cielo Claro */
 }
 
 .team-photo {
@@ -28,8 +62,9 @@
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative; /* Ensure image is above blob */
+  z-index: 1;
 }
-
-#sara-photo {
-  object-position: 50% 5%; /* Adjusts the image to be more top-aligned */
+.team-photo-wrapper.sara .team-photo {
+ object-position: top center;
 }
