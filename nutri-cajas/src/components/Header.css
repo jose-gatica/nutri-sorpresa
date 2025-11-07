@@ -1,30 +1,15 @@
 header {
   background-color: #ffffff;
-  padding: 0 40px;
+  padding: 20px;
   border-bottom: 1px solid #eeeeee;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; /* Changed from center */
-  height: 80px;
-  position: relative;
-  z-index: 10;
-}
-
-h1 a {
-  display: flex;
   align-items: center;
-  text-decoration: none;
-  color: inherit;
 }
 
-/* This keeps the nav centered while the logo aligns to the top */
-header nav {
-  align-self: center;
-}
-
-.header-logo {
-  height: 150px;
-  margin-right: 15px;
+h1 {
+  font-size: 24px;
+  color: #333333;
 }
 
 nav ul {
@@ -35,23 +20,16 @@ nav ul {
 }
 
 nav li {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 nav a {
   text-decoration: none;
   color: #333333;
   font-weight: bold;
-  padding: 8px 15px;
-  border-radius: 6px;
-  transition: color 0.3s ease, background-color 0.3s ease;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #333;
-  background-color: #FFECB3; /* Amarillo Sol Radiante */
-}
-
-nav a.active {
-  border-bottom: 3px solid #FFCCBC; /* Naranja Melocotón Cálido */
+  color: #ff9900;
 }

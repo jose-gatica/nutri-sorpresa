@@ -13,23 +13,24 @@
 
 .sobre-nosotros-image {
   flex: 1;
+  position: relative;
 }
 
-.team-photos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.sobre-nosotros-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #C8E6C9, #FFECB3, #FFCCBC);
+  opacity: 0.6;
+  border-radius: 10px;
+  mix-blend-mode: multiply;
 }
 
-.team-photo {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-#sara-photo {
-  object-position: 50% 5%; /* Adjusts the image to be more top-aligned */
+.sobre-nosotros-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }

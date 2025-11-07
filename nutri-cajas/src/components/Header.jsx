@@ -1,23 +1,18 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Header.css';
-import logo from '../assets/logo-nutri-familia.svg';
 
 const Header = () => {
   return (
     <header>
-      <h1>
-        <NavLink to="/">
-          <img src={logo} alt="Nutri-Cajas Logo" className="header-logo" />
-        </NavLink>
-      </h1>
+      <h1><Link to="/">Nutri-Cajas</Link></h1>
       <nav>
         <ul>
-          <li><NavLink to="/">Inicio</NavLink></li>
-          <li><NavLink to="/sobre-nosotros">Sobre Nosotros</NavLink></li>
-          <li><NavLink to="/nuestras-cajas">Nuestras Cajas</NavLink></li>
-          <li><NavLink to="/blog">Blog</NavLink></li>
-          <li><NavLink to="/contacto">Contacto</NavLink></li>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/sobre-nosotros">Sobre Nosotros</Link></li>
+          <li><Link to="/nuestras-cajas">Nuestras Cajas</Link></li>
+          <li><Link to="/blog">Blog</Link></li>
+          <li><Link to="/contacto">Contacto</Link></li>
         </ul>
       </nav>
     </header>
